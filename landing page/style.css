@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background: #f2f2f2;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('nike-blueprint-back-group-horizontal.webp') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    padding: 5px 15px;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+  }
+  
+  .hero-content {
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background: #ff5500;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 30px;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background: #e64300;
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ececec;
+  }
+  
+  .features-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .feature-box {
+    background: white;
+    padding: 30px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feature-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature-box p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* About Section */
+  .about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #0b0d10;
+    color: white;
+  }
+  
+  .about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Footer Section */
+  .footer {
+    padding: 40px 20px;
+    text-align: center;
+    background: #595555;
+    color: white;
+  }
+  
+  .social-links a {
+    margin: 0 15px;
+    color: rgb(244, 237, 237);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+  
+  .social-links a:hover {
+    color: #ff5500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features-container {
+      flex-direction: column;
+    }
+  }
